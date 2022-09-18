@@ -7,20 +7,20 @@
 
 ### Outline:
 
-##### Page One: Home Page
-###### This will have the 4 Main Genres displayed. Additionally, the user would be able to interact and click the genres displayed, which would lead to the webpage/category of their choice.
+##### Home Page
+###### This will have the 5 Main Genres displayed. Additionally, the user would be able to interact and click the genres displayed, which would lead to the webpage/category of their choice.
 
-##### Page Two: Romance
+##### Page One: Romance
 ###### This will have the romance dramas sorted into sub-genres like fictional, drama etc.
 
-##### Page Three: Action
+##### Page Two: Action
 ###### This will have the action dramas sorted into sub-genres like  fictional,  etc.
 
-##### Page Four: Historical
+##### Page Three: Historical
 ###### This will have the historical dramas sorted into sub-genres like romance, comedy, action etc.
 
-##### Page Five: Horror
+##### Page Four: Horror
 ###### This will have the horror dramas.
 
-##### Page Six: Medical/Legal
+##### Page Five: Medical/Legal
 ###### This will have the medical/legal dramas sorted into sub-genres like romance, comedy, drama etc.

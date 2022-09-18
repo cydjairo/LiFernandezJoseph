@@ -24,3 +24,6 @@
 
 ##### Page Five: Medical/Legal
 ###### This will have the medical/legal dramas sorted into sub-genres like romance, comedy, drama etc.
+
+#### WIREFRAME:
+##### https://www.figma.com/file/ihwGHXq7uSUEajRHrv9fTi/KDramaChingu-wireframe?node-id=0%3A1

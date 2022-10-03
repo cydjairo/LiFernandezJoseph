@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Ubuntu:wght@300&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #fdfeca;
+}
+
+.container {
+  margin: 50px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  width: 800px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #539A49;
+  margin: auto;
+}
+
+h2 {
+  color: #539A49;
+  font-weight: bolder; 
+}
+
+.logo {
+  width: 50px;
+  display: block;
+  margin: 0px;
+}
+
+.description {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.genre-select {
+  margin-top: 60px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.romance {
+  box-sizing: border-box;
+  width: 130px;
+  background-color: #F4C2C2;
+  padding: 100px;
+  border-radius: 100px;
+  position: relative;
+  margin-left: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  background-color: rgba (0, 0, 0, 0.6);
+  color: #ffffff;
+  text-shadow: 0 0 8px #000000, 0 0 8px #000000;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  opacity: 0;
+  /*transition: opacity 0.25s;*/
+}
+
+.overlay:hover  {
+  opacity: 1;
+}
+
+/* just added the line below for the img */
+.romance:hover img {
+  opacity: 0.5;
+}
+
+.horror:hover img {
+  opacity: 0.5;
+}
+
+.historical:hover img {
+  opacity: 0.5;
+}
+
+.medleg:hover img {
+  opacity: 0.5;
+}
+
+.action:hover img {
+  opacity: 0.5;
+}
+
+.overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover > * {
+  transform: translateY(0px);
+}
+
+.horror {
+  box-sizing: border-box;
+  width: 130px;
+  background-color: #808080;
+  padding: 100px;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 815px;
+  top: 0px;
+  text-align: center;
+  bottom: 290px;
+}
+
+.historical {
+  box-sizing: border-box;
+  width: 130px;
+  background-color: #C19A6B;
+  padding: 100px;
+  border-radius: 100px;
+  position: absolute;
+  margin: 50px;
+}
+
+.medleg {
+  box-sizing: border-box;
+  width: 130px;
+  background-color: #4682B4;
+  padding: 100px;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 550px;
+  bottom: 0px;
+  text-align: center;
+}
+
+.action {
+  box-sizing: border-box;
+  width: 130px;
+  background-color: #D0312D;
+  padding: 100px;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 1075px;
+  bottom: 0px;
+  text-align: center;
+}
+
+.circles {
+  box-sizing: border-box;
+  height: 450px;
+  position: relative;
+}
+
+.rpic {
+  position: absolute;
+  padding: 0;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rpic:hover {
+  opacity: 0.2;
+}
+
+.romance:hover {
+  opacity: 0.3px;
+}

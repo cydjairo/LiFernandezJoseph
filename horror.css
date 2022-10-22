@@ -13,6 +13,8 @@ body {
   box-sizing: border-box;
   background-color: #ACDF87;
   font-weight: bold;
+  width: 100%;
+  position: relative;
 }
 
 a {
@@ -30,16 +32,15 @@ a {
   width: 15%;
 }
 
-.next {
-  margin-left: 130px;
-}
-
 .clear {
   clear: both;
 }
 
 .topics {
-  color: #539A49;
+  color: #ffffff;
+  text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .info {
@@ -48,12 +49,10 @@ a {
   position: absolute;
 }
 
-.icon2 {
+.icon1 {
   box-sizing: border-box;
   width: 50px;
-  background-color: gray;
   padding: 30px;
-  border-radius: 100px;
 }
 
 h1 {
@@ -67,7 +66,80 @@ h1 {
   position: relative;
 }
 
-.hpic {
+.rpic {
   position: absolute;
-  top: 0;
+  top: 25px;
+}
+
+.pic1 {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #800000;
+}
+
+.pic2 {
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #800000;
+}
+
+.t1 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-right: 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  font-size: 15px;
+  background-color: rgba (0, 0, 0, 0.6);
+  color: #000000;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  opacity: 0;
+  text-align: justify;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.t2 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+}
+
+.t1, .t2 {
+  padding-bottom: 20px;
+}
+
+.overlay:hover  {
+  opacity: 1;
+}
+
+/* just added the line below for the img */
+.t1:hover img{
+  opacity: 0.25;
+}
+
+.t2:hover img{
+  opacity: 0.25;
+}
+
+.overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover > * {
+  transform: translateY(0px);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #434343;
+  color: white;
+  text-align: center;
 }

@@ -1,31 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Ubuntu:wght@300&display=swap');
 
 * {
   margin: 0;
 }
 
+/* formatting for the whole body */
 body {
   background-color: #F4C2C2;
   font-family: 'Ubuntu', sans-serif;
+  width: 100;
 }
 
+/* Header formatting */
 .header {
   box-sizing: border-box;
   background-color: #ACDF87;
   font-weight: bold;
   width: 100%;
-  position: relative;
+  position: fixed;
+  z-index: 2;
 }
 
+/* removing underline and formatting of the text with link in the navigation header on top */
 a {
   text-decoration: none;
   color: black;
 }
 
+/* removing of bullets in list */
 .nav {
   list-style: none;
 }
 
+/* format inside the header box */
 .nav > li {
   float: left;
   padding: 10px;
@@ -36,6 +43,14 @@ a {
   clear: both;
 }
 
+/* div container for the main information */
+.info {
+  box-sizing: content-box;
+  margin: 50px;
+  position: absolute;
+}
+
+/* formatting of the Genre and Sub-genre titles */
 .topics {
   color: #ffffff;
   text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
@@ -43,12 +58,13 @@ a {
   margin-top: 30px;
 }
 
-.info {
-  box-sizing: content-box;
-  margin: 50px;
-  position: absolute;
+/* div conntainer for the main title of webpage and icon*/
+.main {
+  box-sizing: border-box;
+  position: relative;
 }
 
+/* formatting of main title of the webpage with its icon (until .rpic)*/
 .icon1 {
   box-sizing: border-box;
   width: 50px;
@@ -61,24 +77,24 @@ h1 {
   left: 80px;
 }
 
-.main {
-  box-sizing: border-box;
-  position: relative;
-}
-
 .rpic {
   position: absolute;
   top: 25px;
 }
 
+/* formatting for pic of the 1st kdrama of a sub-genre */
 .pic1 {
   border-radius: 15px;
+  box-shadow: 2px 2px 10px #EA5573;
 }
 
+/* formatting for the pic 2nd kdrama of a sub-genre */
 .pic2 {
   border-radius: 15px;
+  box-shadow: 2px 2px 10px #EA5573;
 }
 
+/* formatting of the first kdrama box */
 .t1 {
   box-sizing: border-box;
   position: relative;
@@ -86,6 +102,14 @@ h1 {
   margin-right: 60px;
 }
 
+/* formatting for the 2nd kdrama box */
+.t2 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+}
+
+/* overlay for hover */
 .overlay {
   position: absolute;
   top: 0px;
@@ -100,34 +124,81 @@ h1 {
   font-weight: bold;
 }
 
-.t2 {
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-}
-
+/* padding for 1st and 2nd kdrama boxes */
 .t1, .t2 {
   padding-bottom: 20px;
 }
 
-.overlay:hover  {
+/* Hover */
+.overlay:hover  {    /* opacity of text after hover */
   opacity: 1;
 }
 
-/* just added the line below for the img */
-.t1:hover img{
+.t1:hover img{  /* opacity of pic of kdrama 1 after hover */
   opacity: 0.25;
 }
 
-.t2:hover img{
+.t2:hover img{  /* opacity of pic of kdrama 2 after hover */
   opacity: 0.25;
 }
 
 .overlay > * {
-  transform: translateY(20px);
+  transform: translateY(20px); /* for the transition sliding */
   transition: transform 0.25s;
 }
 
 .overlay:hover > * {
-  transform: translateY(0px);
+  transform: translateY(0px); /* for the transition sliding */
+} 
+/* end of hover */
+
+/* footer formatting */
+footer {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: -1300px;
+  width: 100%;
+  margin-top: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ftitle {
+  background-color: #ACDF87;
+  box-sizing: border-box;
+}
+
+.references {
+  font-size: smaller;
+  box-sizing: content-box;
+  background-color: #004600;
+  width: 100%;
+  font-weight: bold;
+}
+
+table {
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  font-size: 0.7em;
+}
+
+.top {
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+}
+
+.links {
+  color: #ACDF87;
+  font-size: 0.6em;
+}
+
+.copyright {
+  color: #357a38;
+  text-align: center;
+  font-size: 0.9em;
 }

@@ -4,32 +4,20 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #fdfeca;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  margin: 50px;
   box-sizing: border-box;
 }
 
+/* header format with logo top left (until h1)*/
 .header {
   position: relative;
   box-sizing: border-box;
   margin: auto;
   width: 800px;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 70px;
-  font-family: 'Ubuntu', sans-serif;
-  color: #539A49;
-  margin: auto;
-}
-
-h2 {
-  color: #539A49;
-  font-weight: bolder; 
 }
 
 .logo {
@@ -43,11 +31,35 @@ h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #539A49;
+  margin: auto;
+}
+
+/* genre select format */
+h2 {
+  margin: 50px;
+  color: #539A49;
+  font-weight: bolder; 
+}
+
 .genre-select {
   margin-top: 60px;
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* div container for buttons */
+.circles {
+  box-sizing: border-box;
+  height: 450px;
+  position: relative;
+}
+
+/* romance button format */
 .romance {
   box-sizing: border-box;
   width: 130px;
@@ -58,54 +70,7 @@ h2 {
   margin-left: 300px;
 }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  background-color: rgba (0, 0, 0, 0.6);
-  color: #ffffff;
-  text-shadow: 0 0 8px #000000, 0 0 8px #000000;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  opacity: 0;
-  /*transition: opacity 0.25s;*/
-}
-
-.overlay:hover  {
-  opacity: 1;
-}
-
-/* just added the line below for the img */
-.romance:hover img {
-  opacity: 0.5;
-}
-
-.horror:hover img {
-  opacity: 0.5;
-}
-
-.historical:hover img {
-  opacity: 0.5;
-}
-
-.medleg:hover img {
-  opacity: 0.5;
-}
-
-.action:hover img {
-  opacity: 0.5;
-}
-
-.overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-}
-
-.overlay:hover > * {
-  transform: translateY(0px);
-}
-
+/* horror button format */
 .horror {
   box-sizing: border-box;
   width: 130px;
@@ -119,6 +84,7 @@ h2 {
   bottom: 290px;
 }
 
+/* historical button format */
 .historical {
   box-sizing: border-box;
   width: 130px;
@@ -129,6 +95,7 @@ h2 {
   margin: 50px;
 }
 
+/* medical/legal button format */
 .medleg {
   box-sizing: border-box;
   width: 130px;
@@ -141,6 +108,7 @@ h2 {
   text-align: center;
 }
 
+/* action button format */
 .action {
   box-sizing: border-box;
   width: 130px;
@@ -153,12 +121,59 @@ h2 {
   text-align: center;
 }
 
-.circles {
-  box-sizing: border-box;
-  height: 450px;
-  position: relative;
+/* overlay for hover */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  background-color: rgba (0, 0, 0, 0.6);
+  color: #ffffff;
+  text-shadow: 0 0 8px #000000, 0 0 8px #000000;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  opacity: 0;
 }
 
+/* hover */
+.overlay:hover  { /* opacity of text when hovered */
+  opacity: 1;
+}
+
+.romance:hover img { /* opacity of image when hovered (romance) */
+  opacity: 0.5;
+}
+
+.horror:hover img { /* opacity of image when hovered (horror) */
+  opacity: 0.5;
+}
+
+.historical:hover img { /* opacity of image when hovered (historical) */
+  opacity: 0.5;
+}
+
+.medleg:hover img { /* opacity of image when hovered (medical/legal) */
+  opacity: 0.5;
+}
+
+.action:hover img { /* opacity of image when hovered (action) */
+  opacity: 0.5;
+}
+
+.overlay > * {
+  transform: translateY(20px); /* transition of text when hovered */
+  transition: transform 0.25s;
+}
+
+.overlay:hover > * {
+  transform: translateY(0px); /* transition of text when hovered */
+}
+
+
+
+
+
+/* picture positioning in circle */
 .rpic {
   position: absolute;
   padding: 0;
@@ -168,10 +183,67 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-.rpic:hover {
-  opacity: 0.2;
+/* removing the underline in texts for the buttons because its a link */
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.romance:hover {
-  opacity: 0.3px;
+
+/* footer format */
+.ftitle {
+  background-color: #ACDF87;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.references {
+  font-size: smaller;
+  box-sizing: content-box;
+  background-color: #004600;
+  width: 100%;
+  font-weight: bold;
+  margin-top: -25px;
+}
+
+th {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+table {
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.top {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.link {
+  color: #ACDF87;
+  font-size: 0.6em;
+}
+
+footer {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: -500px;
+  width: 100%;
+  margin-top: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.copyright {
+  color: #357a38;
+  font-size: 0.9em;
+  text-align: center;
 }

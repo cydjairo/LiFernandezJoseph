@@ -7,210 +7,252 @@
   <meta name="viewport" content="width=device-width">
   <meta name="author" content="RG JOSEPH, CJ FERNANDEZ">
   <meta name="keywords" content="HTML, CSS, JavaScript, KDramaChingu, Kdrama">
-  <meta name="revised" content="10-29-2022">
+  <meta name="revised" content="12-18-2022">
 
   <link rel="icon" href="image/icon.png" type="image/gif">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="container">
+  <section class="container">
     <img class="logo" src="images/icon.png">
 
     <!-- Website Title with description of website -->
-    <div class="Title">
-      <div class="header">
+    <section class="Title">
+      <header>
         <h1>KDramaChingu</h1>
-      </div>
-      <p class="description">
-        We aim to help hesitant people pick a K-drama that would be worth their watch. Dramas would be sorted into
-        genres for easier navigation.
-      </p>
-    </div>
+      </header>
+      <article>
+        <p class="description">
+          We aim to help hesitant people pick a K-drama that would be worth their watch. Dramas would be sorted into
+          genres for easier navigation.
+        </p>
+      </article>
+    </section>
 
     <!-- Selecting of Genre that the user is interested in -->
-    <div class="genre-select">
-      <h2>Select a genre to get started with searching:</h2>
-    </div>
-    <!-- Buttons/Circles containing genres that the user will click on -->
-    <div class="circles">
-      <!-- Romance Genre Circle/Button -->
-      <div class="romance">
-        <img class="rpic" src="images/romance.png" height="170px">
-        <div class="overlay">
-          <p class="rtext">
-            <a href="htdocs/romance.html">ROMANCE</a>
-          </p>
-        </div>
-      </div>
+    <main>
+      <article class="genre-select">
+        <h2>Select a genre to get started with searching:</h2>
+      </article>
+      <!-- Buttons/Circles containing genres that the user will click on -->
+      <nav class="circles">
+        <!-- Romance Genre Circle/Button -->
+        <section class="romance">
+          <img class="rpic" src="images/romance.png" height="170px">
+          <section class="overlay">
+            <article>
+              <p class="rtext">
+                <a href="htdocs/romance.html">ROMANCE</a>
+              </p>
+            </article>
+          </section>
+        </section>
 
-      <!-- Horror Genre Circle/Button -->
-      <div class="horror">
-        <img class="rpic" src="images/horror.png" height="170px">
-        <div class="overlay">
-          <p class="rtext">
-            <a href="htdocs/horror.html">HORROR</a>
-          </p>
-        </div>
-      </div>
+        <!-- Horror Genre Circle/Button -->
+        <section class="horror">
+          <img class="rpic" src="images/horror.png" height="170px">
+          <section class="overlay">
+            <article>
+              <p class="rtext">
+                <a href="htdocs/horror.html">HORROR</a>
+              </p>
+            </article>
+          </section>
+        </section>
 
-      <!-- Historical Genre Circle/Button -->
-      <div class="historical">
-        <img class="rpic" src="images/historical.png" height="170px">
-        <div class="overlay">
-          <p class="rtext">
-            HISTORICAL
-          </p>
-        </div>
-      </div>
+        <!-- Historical Genre Circle/Button -->
+        <section class="historical">
+          <img class="rpic" src="images/historical.png" height="170px">
+          <section class="overlay">
+            <article>
+              <p class="rtext">
+                HISTORICAL
+              </p>
+            </article>
+          </section>
+        </section>
 
-      <!-- Medical/Legal Genre Circle/Button -->
-      <div class="medleg">
-        <img class="rpic" src="images/medleg.png" height="100px">
-        <div class="overlay">
-          <p class="rtext">
-            MEDICAL & <br> LEGAL
-          </p>
-        </div>
-      </div>
+        <!-- Medical/Legal Genre Circle/Button -->
+        <section class="medleg">
+          <img class="rpic" src="images/medleg.png" height="100px">
+          <section class="overlay">
+            <article>
+              <p class="rtext">
+                <a href="htdocs/medleg.html">MEDICAL & <br> LEGAL </a>
+              </p>
+            </article>
+          </section>
+        </section>
 
-      <!-- Action Genre Circle/Button -->
-      <div class="action">
-        <img class="rpic" src="images/action.png" height="100px">
-        <div class="overlay">
-          <p class="rtext">
-            ACTION
-          </p>
-        </div>
-      </div>
-    </div>
+        <!-- Action Genre Circle/Button -->
+        <section class="action">
+          <img class="rpic" src="images/action.png" height="100px">
+          <section class="overlay">
+            <article>
+              <p class="rtext">
+                ACTION
+              </p>
+            </article>
+          </section>
+        </section>
+      </nav>
+
+      <section class="socmed">
+        <article>
+          <p class="soch">You can watch Kdramas OFFICIALLY in the Websites here:</p>
+        </article>
+        <ul class="icons">
+          <li>
+            <a href="https://www.netflix.com">
+              <article class="nx"></article>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.viu.com/ott/ph/en-us">
+              <article class="viu"></article>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.viki.com/">
+              <article class="viki"></article>
+            </a>
+          </li>
+          </article>
+      </section>
+
+    </main>
+
 
     <!-- Page Footer -->
     <footer>
       <!-- Website title with logo for footer -->
-      <div class="ftitle">
+      <section class="ftitle">
         <p><img src="/images/icon.png" width="20px">KDramaChingu</p>
-      </div>
+      </section>
 
       <!-- References for Pictures -->
-      <div class="references">
+      <main class="references">
         <!-- References title -->
-        <p class="top">
-          References:
-        </p>
+        <section class="top">
+          <p>References:</p>
+        </section>
         <!-- Table of references -->
-        <table>
-          <tr>
-            <th>References for Pictures:</th>
-          </tr>
+        <section>
+          <table>
+            <tr>
+              <th>References for Pictures:</th>
+            </tr>
 
-          <!-- For spacing in between the lines in the table/empty rows -->
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
+            <!-- For spacing in between the lines in the table/empty rows -->
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
 
-          <!-- Reference for Romance Picture -->
-          <tr>
-            <td>Romance Picture:</td>
-          </tr>
-          <tr class="link">
-            <td>RedBubble (n.d.) <i> Log In </i> Retrieved from: https://www.pinterest.ph/pin/508554982925383747/
-            </td>
-          </tr>
+            <!-- Reference for Romance Picture -->
+            <tr>
+              <td>Romance Picture:</td>
+            </tr>
+            <tr class="link">
+              <td>RedBubble (n.d.) <i> Log In </i> Retrieved from: https://www.pinterest.ph/pin/508554982925383747/
+              </td>
+            </tr>
 
-          <!-- For spacing in between the lines in the table/empty rows -->
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
+            <!-- For spacing in between the lines in the table/empty rows -->
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
 
-          <!-- Reference for Horror Picture -->
-          <tr>
-            <td>Horror Picture:</td>
-          </tr>
-          <tr class="link">
-            <td>ajibon (n.d.) <i> Happy halloween Cartoon ghost isolated on white background. Vector illustration </i>
-              Retrieved from:
-              https://www.123rf.com/photo_109021730_happy-halloween-cartoon-ghost-isolated-on-white-background-vector-illustration.html?vti=mnbbztn0il1e7vru38-1-5
-            </td>
-          </tr>
+            <!-- Reference for Horror Picture -->
+            <tr>
+              <td>Horror Picture:</td>
+            </tr>
+            <tr class="link">
+              <td>ajibon (n.d.) <i> Happy halloween Cartoon ghost isolated on white background. Vector illustration </i>
+                Retrieved from:
+                https://www.123rf.com/photo_109021730_happy-halloween-cartoon-ghost-isolated-on-white-background-vector-illustration.html?vti=mnbbztn0il1e7vru38-1-5
+              </td>
+            </tr>
 
-          <!-- For spacing in between the lines in the table/empty rows -->
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
+            <!-- For spacing in between the lines in the table/empty rows -->
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
 
-          <!-- Reference for Historical Picture -->
-          <tr>
-            <td>Historical Picture:</td>
-          </tr>
-          <tr class="link">
-            <td>pngtree (n.d.) <i> Faceless Illustration Of A Man Wear Joseon King Hanbok, King Hanbok, Red Man Hanbok,
-                Male Hanbok PNG and Vector with Transparent Background for Free Download </i> Retrieved from:
-              https://in.pinterest.com/pin/905927281263738148/
-            </td>
-          </tr>
+            <!-- Reference for Historical Picture -->
+            <tr>
+              <td>Historical Picture:</td>
+            </tr>
+            <tr class="link">
+              <td>pngtree (n.d.) <i> Faceless Illustration Of A Man Wear Joseon King Hanbok, King Hanbok, Red Man
+                  Hanbok,
+                  Male Hanbok PNG and Vector with Transparent Background for Free Download </i> Retrieved from:
+                https://in.pinterest.com/pin/905927281263738148/
+              </td>
+            </tr>
 
-          <!-- For spacing in between the lines in the table/empty rows -->
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
+            <!-- For spacing in between the lines in the table/empty rows -->
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
 
-          <!-- Reference for Medical/Legal Picture -->
-          <tr>
-            <td>Medical/Legal Picture:</td>
-          </tr>
-          <tr class="link">
-            <td>pngwing (n.d.) <i> Medical error Negligence Lawyer Medicine Medical law, lawyer, people, medicine,
-                disease png </i> Retrieved from: https://www.pngwing.com/en/free-png-puizi
-            </td>
-          </tr>
+            <!-- Reference for Medical/Legal Picture -->
+            <tr>
+              <td>Medical/Legal Picture:</td>
+            </tr>
+            <tr class="link">
+              <td>pngwing (n.d.) <i> Medical error Negligence Lawyer Medicine Medical law, lawyer, people, medicine,
+                  disease png </i> Retrieved from: https://www.pngwing.com/en/free-png-puizi
+              </td>
+            </tr>
 
-          <!-- For spacing in between the lines in the table/empty rows -->
-          <tr>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-          </tr>
+            <!-- For spacing in between the lines in the table/empty rows -->
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
 
-          <!-- Reference for Action Picture -->
-          <tr>
-            <td>Action Picture:</td>
-          </tr>
-          <tr class="link">
-            <td>nickylarson974 (2020) <i> Vector hand gun cartoon isolated stock illustration </i> Retrieved from:
-              https://www.istockphoto.com/vector/vector-hand-gun-cartoon-isolated-gm1227086337-361767374
-            </td>
-          </tr>
+            <!-- Reference for Action Picture -->
+            <tr>
+              <td>Action Picture:</td>
+            </tr>
+            <tr class="link">
+              <td>nickylarson974 (2020) <i> Vector hand gun cartoon isolated stock illustration </i> Retrieved from:
+                https://www.istockphoto.com/vector/vector-hand-gun-cartoon-isolated-gm1227086337-361767374
+              </td>
+            </tr>
 
-          <!-- Copyright -->
-          <tr>
-            <td class="copyright">
-              <p class="copyright">|| © 2022 Rika Giana T. Joseph and Cyd Jairo G. Fernandez ||</p>
-            </td>
-          </tr>
-        </table>
-      </div>
+            <!-- Copyright -->
+            <tr>
+              <td class="copyright">
+                <p class="copyright">|| © 2022 Rika Giana T. Joseph and Cyd Jairo G. Fernandez ||</p>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </main>
     </footer>
-  </div>
+  </section>
 
 </body>
 

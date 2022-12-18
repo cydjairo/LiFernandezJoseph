@@ -161,6 +161,36 @@ h1 {
   font-size: 2em;
 }
 
+/* Sprite img socmed links */
+
+.soch {
+  position: absolute;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.icons {
+  list-style: none;
+  padding-top: 80px;
+}
+
+.icons > li {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.ig {
+	background: url('../images/socmed.png') no-repeat -195px -58px;
+	width: 56px;
+	height: 56px;
+}
+
+.twt {
+  background: url('../images/socmed.png') no-repeat -274px -125px;
+	width: 56px;
+	height: 56px;
+}
+
 /* footer formatting */
 li {
   float: left;
@@ -188,7 +218,7 @@ ul {
 footer {
   position: absolute;
   box-sizing: border-box;
-  bottom: -1600px;
+  bottom: -1800px;
   width: 100%;
   margin-top: 100px;
   font-family: 'Ubuntu', sans-serif;

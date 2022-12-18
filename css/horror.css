@@ -11,7 +11,7 @@ body {
 }
 
 /* Header formatting */
-.header {
+header {
   box-sizing: border-box;
   background-color: #ACDF87;
   font-weight: bold;
@@ -150,11 +150,40 @@ h1 {
 }
 /* end of hover */
 
+.devpick {
+  color: #ffffff;
+  text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+/* Sprite img socmed links */
+.soch {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.icons {
+  list-style: none;
+}
+
+.icons > li {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.ig {
+	background: url('../images/socmed.png') no-repeat -195px -58px;
+	width: 56px;
+	height: 56px;
+}
+
 /* footer formatting */
 footer {
   position: absolute;
   box-sizing: border-box;
-  bottom: -900px;
+  bottom: -1450px;
   width: 100%;
   margin-top: 100px;
   font-family: 'Ubuntu', sans-serif;

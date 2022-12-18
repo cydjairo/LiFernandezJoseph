@@ -12,7 +12,7 @@ body {
 }
 
 /* Header formatting */
-.header {
+header {
   box-sizing: border-box;
   background-color: #ACDF87;
   font-weight: bold;
@@ -152,11 +152,76 @@ h1 {
 } 
 /* end of hover */
 
+
+/* video */
+.devpick {
+  color: #ffffff;
+  text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+/* Sprite img socmed links */
+.soch {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.icons {
+  list-style: none;
+}
+
+.icons > li {
+  padding-right: 10px;
+}
+
+.ig {
+	background: url('../images/socmed.png') no-repeat -195px -58px;
+	width: 56px;
+	height: 56px;
+}
+
+.sp {
+  background: url('../images/socmed.png') no-repeat -274px -125px;
+	width: 56px;
+	height: 56px;
+}
+
+.yt {
+  background: url('../images/socmed.png') no-repeat -110px -192px;
+	width: 57px;
+	height: 56px;
+}
+
 /* footer formatting */
+li {
+  float: left;
+}
+
+.category1, .category2 {
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+
+.category1{
+  padding-left: 150px;
+}
+
+.category2{
+  padding-left: 490px;
+}
+
+
+ul {
+  list-style: none;
+}
+
 footer {
   position: absolute;
   box-sizing: border-box;
-  bottom: -1300px;
+  bottom: -1800px;
   width: 100%;
   margin-top: 100px;
   font-family: 'Ubuntu', sans-serif;
@@ -179,11 +244,11 @@ footer {
 }
 
 table {
-  padding: 10px;
   font-weight: bold;
   color: white;
   width: 100%;
   font-size: 0.7em;
+  padding-left: 200px;
 }
 
 .top {

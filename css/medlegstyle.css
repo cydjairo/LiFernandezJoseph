@@ -185,40 +185,25 @@ h1 {
 	height: 56px;
 }
 
+.ig:hover {
+  opacity: 0.5;
+}
+
 .twt {
-  background: url('../images/socmed.png') no-repeat -274px -125px;
+  background: url('../images/socmed.png') no-repeat -111px -58px;
 	width: 56px;
 	height: 56px;
 }
 
+.twt:hover {
+  opacity: 0.5;
+}
+
 /* footer formatting */
-li {
-  float: left;
-}
-
-.category1, .category2 {
-  color: white;
-  font-size: medium;
-  text-align: center;
-}
-
-.category1{
-  padding-left: 150px;
-}
-
-.category2{
-  padding-left: 490px;
-}
-
-
-ul {
-  list-style: none;
-}
-
 footer {
   position: absolute;
   box-sizing: border-box;
-  bottom: -1800px;
+  bottom: -1850px;
   width: 100%;
   margin-top: 100px;
   font-family: 'Ubuntu', sans-serif;
@@ -241,16 +226,23 @@ footer {
 }
 
 table {
+  padding: 10px;
   font-weight: bold;
   color: white;
   width: 100%;
   font-size: 0.7em;
-  padding-left: 200px;
+  text-align: left;
 }
 
 .top {
   font-size: 0.9em;
   text-align: center;
+  color: white;
+}
+
+.top2 {
+  font-size: 0.9em;
+  text-align: lef;
   color: white;
 }
 

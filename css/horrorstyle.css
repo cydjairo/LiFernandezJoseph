@@ -179,6 +179,10 @@ h1 {
 	height: 56px;
 }
 
+.ig:hover {
+  opacity: 0.5;
+}
+
 /* footer formatting */
 footer {
   position: absolute;
@@ -211,11 +215,18 @@ table {
   color: white;
   width: 100%;
   font-size: 0.7em;
+  text-align: left;
 }
 
 .top {
   font-size: 0.9em;
   text-align: center;
+  color: white;
+}
+
+.top2 {
+  font-size: 0.9em;
+  text-align: lef;
   color: white;
 }
 
